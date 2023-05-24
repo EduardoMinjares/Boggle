@@ -17,4 +17,4 @@ setTimeout(async function(){
     submitBtn.setAttribute('disabled','disabled')
     let scoreResponse = await axios.post("/score",{data:{score:score}})
     console.log(scoreResponse)
-}, 5000)
+}, 60000)

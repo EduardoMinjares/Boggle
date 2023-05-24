@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block Title %} Display Board {% endblock %}
+{% block Content %}
+<h1>BOGGLE</h1>
+<br>
+<div id="board">
+    <form >
+        <label for="word">Enter a word</label>
+        <input type="text" id="word" name="word">
+        <button id="submit-Btn" type="submit">Submit</button>
+    </form>
+    <table>
+        <tbody>
+            {% for tr in range(1)%}
+            <tr>
+            {% for td in board%}          
+                <td>{{tr[td]}}</td>
+            {% endfor %} 
+            </tr>
+            {% endfor %}
+        </table>
+        </tbody>
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+td{
+    display: block;
+    width: auto;
+}
+
+table, tr{
+    border: black 1px solid;
+}
